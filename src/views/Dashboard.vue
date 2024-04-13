@@ -193,7 +193,7 @@ export default class Dashboard extends Mixins(StateMixin) {
   }
 
   updateMenuCollapsed () {
-    this.menuCollapsed = (this.$el.clientWidth / this.columnCount) < 560
+    this.menuCollapsed = false
   }
 
   handleUpdateLayout () {

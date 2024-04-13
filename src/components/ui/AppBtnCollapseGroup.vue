@@ -58,8 +58,7 @@ export default class AppBtnCollapseGroup extends Vue {
   readonly disabled?: boolean
 
   get isCollapsed () {
-    if (this.collapsed) return true
-    return this.$vuetify.breakpoint.mdAndDown
+    return this.collapsed
   }
 
   get hasDefaultSlot () {
